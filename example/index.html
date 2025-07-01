@@ -2,45 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page contains basic HTML tags for beginners">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page contains basic HTML tags for beginners" />
     <title>Web Dev 2k25</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    Hey we are learning web development again!
-    Its really good
+    Hey we are learning web development again! Its really good
     <h2>There are 6 types of heading and the example is below</h2>
-    <h1> This is H1 heading </h1>
-    <h2> This is H2 heading </h2>
-    <h3> This is H3 heading </h3>
-    <h4> This is H4 heading </h4>
-    <h5> This is H5 heading </h5>
-    <h6> This is H6 heading </h6>
+    <h1>This is H1 heading</h1>
+    <h2>This is H2 heading</h2>
+    <h3>This is H3 heading</h3>
+    <h4>This is H4 heading</h4>
+    <h5>This is H5 heading</h5>
+    <h6>This is H6 heading</h6>
 
     <h2>Paragraph Tag</h2>
-    <P>This paragraph is generated with lorem an emmet abbreviation</P>
-    <p style="background-color: aquamarine; color: black;">
-        This paragrapgh tag also used a inline css attribute and a break tag in it...<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Iusto explicabo
-        accusantium obcaecati, atque placeat
-        possimus blanditiis! Aspernatur sit sunt laborum molestias reiciendis quibusdam distinctio, odio, alias,
-        nulla
-        ducimus eveniet veritatis.</p>
-
+    <p>This paragraph is generated with lorem an emmet abbreviation</p>
+    <p style="background-color: aquamarine; color: black">
+        This paragrapgh tag also used a inline css attribute and a break tag in
+        it...<br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo
+        accusantium obcaecati, atque placeat possimus blanditiis! Aspernatur sit
+        sunt laborum molestias reiciendis quibusdam distinctio, odio, alias, nulla
+        ducimus eveniet veritatis.
+    </p>
 
     <h2>Image Tag</h2>
     <img src="https://picsum.photos/200/300" alt="Lorem Images" />
 
-    <h2>
-        About Table tags
-    </h2>
+    <h2>About Table tags</h2>
 
     <table>
-        <caption>Employee Details</caption>
+        <caption>
+            Employee Details
+        </caption>
         <!-- we use thead, tbody & tfoot just for grouping, managing and styling -->
         <thead>
             <tr>
@@ -100,51 +98,77 @@
     <!-- dd - defination description -->
     <dl>
         <dt>HTML</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime dolorum accusamus corporis non labore
-            veritatis nulla nihil eos voluptates.</dd>
+        <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime
+            dolorum accusamus corporis non labore veritatis nulla nihil eos
+            voluptates.
+        </dd>
         <dt>CSS</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime dolorum accusamus corporis non labore
-            veritatis nulla nihil eos voluptates.</dd>
+        <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime
+            dolorum accusamus corporis non labore veritatis nulla nihil eos
+            voluptates.
+        </dd>
         <dt>JS</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime dolorum accusamus corporis non labore
-            veritatis nulla nihil eos voluptates.</dd>
+        <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime
+            dolorum accusamus corporis non labore veritatis nulla nihil eos
+            voluptates.
+        </dd>
     </dl>
 
     <h2>Form And Input Tags</h2>
     <form action="">
         <!-- create a basic submit form -->
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="userName" placeholder="Enter your Name"><br><br>
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="userName" placeholder="Enter your Name" />
+        </div><br />
 
-        <label for="password">Passcode: </label>
-        <input type="password" id="password" name="password" placeholder="Enter your Passcode"><br><br>
+        <div>
+            <label for="password">Passcode: </label>
+            <input type="password" id="password" name="password" placeholder="Enter your Passcode" />
+        </div><br />
 
-        <label for="female">Female </label>
-        <input type="radio" name="gender" id="female">
+        <span>
+            <label for="female">Female </label>
+            <input type="radio" name="gender" id="female" />
+            <label for="male">Male </label>
+            <input type="radio" name="gender" id="male" /></span>
 
-        <label for="male">Male </label>
-        <input type="radio" name="gender" id="male"><br><br>
+        <div>
+            <select name="course" id="course">
+                <option value="course">Courses</option>
+                <option value="Diploma CE">Diploma CE</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Tech">B.Tech</option>
+            </select>
+        </div>
 
-        <select name="course" id="course">
-            <option value="course">Courses</option>
-            <option value="Diploma CE">Diploma CE</option>
-            <option value="BCA">BCA</option>
-            <option value="B.Tech">B.Tech</option>
-        </select><br><br>
+        <label for="comment">Any suggestion: </label><br />
+        <textarea name="comment" id="comment" cols="30" rows="4"
+            placeholder="Enter your suggestion...."></textarea><br />
 
-        <label for="comment">Any suggestion: </label><br>
-        <textarea name="comment" id="comment" cols="30" rows="4" placeholder="Enter your suggestion...."></textarea><br>
+        <input type="checkbox" name="correct" id="correct" required />
+        <label for="correct">All details are submitted by me & it's correct.</label><br /><br />
 
-        <input type="checkbox" name="correct" id="correct" required>
-        <label for="correct">All details are submitted by me & it's correct.</label><br><br>
-
-        <input type="submit" value="submit">
-        <input type="reset" value="reset">
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
     </form>
+
+    <h2>Block and Inline Tags</h2>
+
+    <div>I'm div annd I'm a block Element</div>
+    <p>I'm para & Im block element</p>
+    <h5>we are headings & we also are block level elements</h5>
+    <hr> <!--hr is use to create a horizone light, it is a block element-->
+
+    <span>Heyy, I'm span & I'm an Inline Element </span>
+    <a href="https://google.com">Google link in inline element</a>
+    <strong>this is strong tag, also an inline element</strong>
 
 
     <!-- <script src="script.js"></script> -->
-
 </body>
 
 </html>
