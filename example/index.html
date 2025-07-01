@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains basic HTML tags for beginners">
     <title>Web Dev 2k25</title>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -48,38 +49,32 @@
                 <th>Fav Language</th>
             </tr>
         </thead>
-
         <tbody>
             <tr>
                 <td rowspan="2">Mahima</td>
                 <td>Programmer</td>
                 <td>JavaScript</td>
             </tr>
-
             <tr>
                 <td>Tester</td>
                 <td>--</td>
             </tr>
-
             <tr>
                 <td>Bhaskar</td>
                 <td>CEO</td>
                 <td>Java</td>
             </tr>
-
             <tr>
                 <td>Punita</td>
                 <td>Finance</td>
                 <td>Spreadsheet</td>
             </tr>
-
             <tr>
                 <td>Anand</td>
                 <td>Manager</td>
                 <td>Excel</td>
             </tr>
         </tbody>
-
         <!-- how tfoot works, I'm not able to understand -->
     </table>
 
@@ -114,6 +109,38 @@
         <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime dolorum accusamus corporis non labore
             veritatis nulla nihil eos voluptates.</dd>
     </dl>
+
+    <h2>Form And Input Tags</h2>
+    <form action="">
+        <!-- create a basic submit form -->
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="userName" placeholder="Enter your Name"><br><br>
+
+        <label for="password">Passcode: </label>
+        <input type="password" id="password" name="password" placeholder="Enter your Passcode"><br><br>
+
+        <label for="female">Female </label>
+        <input type="radio" name="gender" id="female">
+
+        <label for="male">Male </label>
+        <input type="radio" name="gender" id="male"><br><br>
+
+        <select name="course" id="course">
+            <option value="course">Courses</option>
+            <option value="Diploma CE">Diploma CE</option>
+            <option value="BCA">BCA</option>
+            <option value="B.Tech">B.Tech</option>
+        </select><br><br>
+
+        <label for="comment">Any suggestion: </label><br>
+        <textarea name="comment" id="comment" cols="30" rows="4" placeholder="Enter your suggestion...."></textarea><br>
+
+        <input type="checkbox" name="correct" id="correct" required>
+        <label for="correct">All details are submitted by me & it's correct.</label><br><br>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
 
 
     <!-- <script src="script.js"></script> -->
